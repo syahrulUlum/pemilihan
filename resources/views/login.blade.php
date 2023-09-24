@@ -28,7 +28,7 @@
                                         @csrf
                                         <div class="form-group">
                                             <input type="text" class="form-control form-control-user"
-                                                placeholder="Username" name="username" value="{{ old('username') }}">
+                                                placeholder="Masukan Username" name="username" value="{{ old('username') }}">
                                             @error('username')
                                                 <span class="text-danger">
                                                     {{ $message }}
@@ -37,7 +37,7 @@
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                name="password" placeholder="Password">
+                                                name="password" placeholder="Masukan Password">
                                             @error('password')
                                                 <span class="text-danger">
                                                     {{ $message }}

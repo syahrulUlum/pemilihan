@@ -2,14 +2,14 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-7">
+            <div class="col-lg-7">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <h6 class="font-weight-bold text-primary">Data Kategori</h6>
                             </div>
-                            <div class="col-6 text-right">
+                            <div class="col-lg-6 text-right">
                                 <a href="{{ url('calon/kategori/create') }}" class="btn btn-primary">Tambah Kategori</a>
                             </div>
                         </div>

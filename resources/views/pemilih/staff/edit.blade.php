@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4">
+            <div class="col-lg-4">
                 <div class="card shadow mb-4">
                     <div class="card-header">
                         <h4>Edit Staff / Guru</h4>

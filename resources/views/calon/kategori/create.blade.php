@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4">
+            <div class="col-lg-4">
                 <div class="card shadow mb-4">
                     <div class="card-header">
                         <h4>Tambah Kategori</h4>
@@ -12,7 +12,8 @@
                             @csrf
                             <div class="form-group mb-2">
                                 <label>Kategori</label>
-                                <input type="text" name="name" class="form-control" placeholder="Masukan nama kategori">
+                                <input type="text" name="name" class="form-control"
+                                    placeholder="Masukan nama kategori">
                                 @error('name')
                                     <span class="text-danger">
                                         {{ $message }}

@@ -31,7 +31,12 @@ class PengaturanController extends Controller
 
         if (Auth::guard('web')->check()) {
             $user = User::find($pengaturan);
-            $user->update($request->all());
+            if (env('APP_DEMO')) {
+                return back()->with('gagal', 'Mode demo
+                 tidak bisa update admin');
+            } else {
+                $user->update($request->all());
+            }
         } else if (Auth::guard('siswa')->check()) {
             $siswa = Siswa::find($pengaturan);
             $siswa->update($request->all());

@@ -6,10 +6,10 @@
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <h6 class="font-weight-bold text-primary">Data Jadwal</h6>
                             </div>
-                            <div class="col-6 text-right">
+                            <div class="col-lg-6 text-right">
                                 <a href="{{ url('jadwal/create') }}" class="btn btn-primary">Tambah Jadwal</a>
                             </div>
                         </div>

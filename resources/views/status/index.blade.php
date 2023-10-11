@@ -2,11 +2,11 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-8">
+            <div class="col-lg-8">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-lg-6">
                                 <h6 class="font-weight-bold text-primary">Status Pemilihan</h6>
                             </div>
                         </div>

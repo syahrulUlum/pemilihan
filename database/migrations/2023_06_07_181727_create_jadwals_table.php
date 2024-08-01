@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('jadwals', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('kategori_id');
-            $table->timestamp('mulai');
-            $table->timestamp('selesai');
+            $table->timestamp('mulai')->nullable();
+            $table->timestamp('selesai')->nullable();
             $table->timestamps();
 
             $table->foreign('kategori_id')->references('id')->on('kategoris');

@@ -45,7 +45,13 @@ class PemilihanController extends Controller
                 }
             }
         }
-        return view('pemilihan', compact('kategoris'));
+        $cekCalon = Calon::where('siswa_id', auth()->user()->id)->first();
+        if($cekCalon){
+            $calonMilihDiKategori = $cekCalon->kategori_id;
+        }else {
+            $calonMilihDiKategori = null;
+        }
+        return view('pemilihan', compact('kategoris', 'calonMilihDiKategori'));
     }
 
     public function pilih($jadwal, $calon)

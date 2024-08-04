@@ -39,7 +39,7 @@ class CalonController extends Controller
             'kategori_id' => 'required',
             'visi' => 'required',
             'misi' => 'required',
-            'foto' => 'required|array|min:3',
+            'foto' => 'required|min:3',
         ]);
 
         $calon = Calon::where('siswa_id', $request->siswa_id)->first();

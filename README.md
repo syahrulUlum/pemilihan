@@ -16,5 +16,6 @@
 6. Run `composer install`
 7. Run ` php artisan key:generate`
 8. Run `php artisan migrate`
-9. Run `php artisan serve`
-10. Enjoy :)
+9. Run `php artisan storage:link`
+10. Run `php artisan serve`
+11. Enjoy :)
